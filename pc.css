@@ -1,0 +1,328 @@
+/* imports fonts for use in website */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Share+Tech&display=swap');
+
+/* change background color and default text*/
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* design title element */ 
+h1 {
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-size: 70px;
+    font-style: normal;
+}
+
+/* sub titles outside boxes */
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* sub titles inside boxes */
+h2 {
+    color: #6a0dad;
+}
+
+/* design css nav bar */
+.topnav {
+    overflow: hidden;
+    background-color: #575757;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 10px solid #333;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* nav bar links */
+.topnav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* nav bar links hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* nav bar links clicked on */
+.topnav a.active {
+    background-color: #FFFF;
+    color: black;
+}
+
+/* nav bar logo */
+.nav-logo {
+    width: 77px;
+    display: flex;
+    height: auto;
+    padding: 0;
+}
+
+/* change top home image size */
+.top_image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* center all items in main */
+main {
+    margin-top: 60px;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+/* text in text box */
+.text-box {
+    background-color: #1E1E1E;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+/* image in text box */
+.text-box img {
+    float: left;
+    margin-right: 20px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* navigation buttons */
+.nav-button {
+    background-color: #575757;
+    color: #E0E0E0;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    transition: background-color 0.3s, color 0.3s; /* set time to transition to hover background */
+}
+
+/* navigation buttons hovering */
+.nav-button:hover {
+    background-color: #444;
+    color: #FFFF;
+}
+
+/* text box with list  */
+.lists {
+    background-color: #1E1E1E;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* lists header */
+.lists h3 {
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+/* list type */
+.lists ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* list items */
+.lists li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* parts grid */
+.parts-grid {
+    display: grid; /* set pattern as a grid*/
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* how grid will repeat */
+    gap: 20px;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* part items */
+.part-item {
+    background-color: #1E1E1E;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+}
+
+/* images of part items */
+.part-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* videos */
+.video-section {
+    margin-top: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* video box */
+.video-container {
+    background-color: #1E1E1E;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* video frame */
+.video-container iframe {
+    border-radius: 8px;
+}
+
+/* video box sub text */
+.video-container p {
+    margin-top: 10px;
+    color: #E0E0E0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* resources grid */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* how grid will repeat */
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* box with resources */
+.resource-box {
+    background-color: #1E1E1E;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* link in resources box */
+.resource-box a {
+    color: #E0E0E0;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* link in resources box hover */
+.resource-box a:hover {
+    color: #FFFFFF;
+}
+
+/* text in resources box */
+.resource-box p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #B0B0B0;
+}
+
+/* assembly step box */
+.step {
+    background-color: #2E2E2E;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* text box text*/
+.text-box p {
+    margin: 5px;
+    line-height: 1.6;
+}
+
+/* text box text outside of steps */
+.text-box > p:not(.step) {
+    background-color: transparent;
+    padding: 0;
+    margin: 10px 0; /* creates distance between text in steps and text outside */
+}
+
+/* links default */
+a {
+    color: #6a0dad;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* time to transition to background hover color */
+}
+
+/* links hover */
+a:hover {
+    color: #590c91cb;
+}
+
+/* links clicked */
+a:active {
+    color: #5a0c9171;
+}
+
+/* links in resources box */
+.resource-box a {
+    color: #C0C0C0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-decoration: underline; /* add underline to links */
+}
+
+/* links in resources box hover */
+.resource-box a:hover {
+    color: #7a7a7a;
+}
+
+/* links in resources box clicked on */
+.resource-box a:active {
+    color: #4b4b4b;
+}
+
+/* list in resources box */
+.resource-box ul {
+    list-style-position: outside; /* type of list inside resource box */
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* item in list in resources box */
+.resource-box li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
